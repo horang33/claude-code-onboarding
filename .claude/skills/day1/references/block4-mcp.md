@@ -84,45 +84,31 @@ Claude Code ←→ MCP 서버 ←→ 외부 도구
 
 ### MCP 연결 가이드 (연결이 안 되어 있다면)
 
-Figma, Notion, Slack MCP는 **claude.ai 웹사이트**에서 연결합니다.
+Figma, Notion, Slack MCP는 **터미널에서 `claude mcp add` 명령어**로 연결합니다.
 
-#### 방법 1: claude.ai에서 연결 (추천)
+#### 연결 방법
 
-1. 브라우저에서 [claude.ai/settings](https://claude.ai/settings) 접속
-2. 좌측 메뉴에서 **"Integrations"** 클릭
-3. 연결하려는 서비스 옆 **"Connect"** 클릭:
-   - **Figma** — Figma 계정으로 OAuth 인증
-   - **Notion** — Notion 워크스페이스 선택 후 권한 허용
-   - **Slack** — Slack 워크스페이스 선택 후 권한 허용
-4. 인증 완료 후 Claude Code를 **재시작** (`exit` → `claude`)
-5. `/mcp` 으로 연결 확인
-
-#### 방법 2: 터미널에서 직접 추가
-
-Claude Code 밖(일반 터미널)에서 아래 명령어를 실행합니다:
+Claude Code를 종료(`exit`)한 뒤, 일반 터미널에서 아래 명령어를 실행합니다:
 
 ```bash
-# Figma 연결
-claude mcp add figma
+# Figma 연결 (디자이너 필수)
+claude mcp add --transport http figma https://mcp.figma.com/mcp -s user
 
-# Notion 연결
-claude mcp add notion
+# Notion 연결 (리서처/PM 필수)
+claude mcp add --transport http notion https://mcp.notion.com/mcp -s user
 
-# Slack 연결
-claude mcp add slack
+# Slack 연결 (공통 권장)
+claude mcp add --transport http slack https://mcp.slack.com/mcp -s user
 ```
 
+> `-s user` 옵션을 붙이면 모든 프로젝트에서 사용할 수 있습니다.
+
 각 명령어 실행 시 브라우저가 열리며 OAuth 인증을 진행합니다.
+인증 완료 후 Claude Code를 다시 실행(`claude`)합니다.
 
 #### 연결 확인
 
-Claude Code를 재시작한 뒤 `/mcp`을 입력하세요. 아래처럼 보이면 성공입니다:
-
-```
-● claude_ai_Figma (connected)
-● claude_ai_Notion (connected)
-● claude_ai_Slack (connected)
-```
+Claude Code 대화창에서 `/mcp`을 입력하세요. 연결된 서비스가 목록에 보이면 성공입니다.
 
 > 모든 서비스를 연결할 필요는 없습니다. 본인 역할에 필요한 것만 연결하면 됩니다.
 > - 디자이너: Figma 필수, Notion/Slack 권장
