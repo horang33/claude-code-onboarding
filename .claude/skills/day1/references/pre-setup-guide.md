@@ -107,6 +107,8 @@ MCP(Model Context Protocol)는 Claude Code에서 Figma, Notion, Slack 등 외부
 
 터미널에서 아래 명령어를 실행하세요 (필요한 서비스만):
 
+> 아래 명령어를 그대로 복사해서 붙여넣기만 하면 됩니다. `--transport` 같은 플래그의 의미는 몰라도 됩니다.
+
 ```bash
 # Figma 연결
 claude mcp add --transport http figma https://mcp.figma.com/mcp -s user
@@ -118,7 +120,7 @@ claude mcp add --transport http notion https://mcp.notion.com/mcp -s user
 claude mcp add --transport http slack https://mcp.slack.com/mcp -s user
 ```
 
-각 명령어 실행 시 브라우저가 열리며 OAuth 인증을 진행합니다.
+각 명령어 실행 시 브라우저가 열리며 OAuth 인증을 진행합니다. OAuth 인증이란 브라우저에서 "허용" 버튼을 눌러 연결을 승인하는 방식입니다.
 연결 후 Claude Code 재시작 (`exit` → `claude`) → `/mcp` 입력으로 확인
 
 > MCP를 지금 연결하지 않아도 온보딩 진행은 가능합니다 (시뮬레이션 모드 제공).

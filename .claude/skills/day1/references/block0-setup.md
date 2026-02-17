@@ -50,9 +50,13 @@ claude --version
 안녕! 나는 {역할}이야. 오늘 Claude Code를 처음 써봐.
 ```
 
+> `{역할}` 부분을 본인 역할(디자이너/리서처/PM)로 바꿔 입력하세요.
+
 Claude가 응답하면 성공입니다.
 
 ### 실습 2: MCP 연결 상태 확인
+
+> MCP는 Claude Code에서 Figma, Notion 같은 외부 도구를 연결하는 기능입니다. 자세한 내용은 Block 4에서 배웁니다.
 
 Claude Code 대화창에서 아래를 입력해보세요:
 

@@ -103,7 +103,7 @@ claude mcp add --transport http slack https://mcp.slack.com/mcp -s user
 
 > `-s user` 옵션을 붙이면 모든 프로젝트에서 사용할 수 있습니다.
 
-각 명령어 실행 시 브라우저가 열리며 OAuth 인증을 진행합니다.
+각 명령어 실행 시 브라우저가 열리며 OAuth 인증을 진행합니다. OAuth 인증이란 브라우저에서 "허용" 버튼을 눌러 연결을 승인하는 방식입니다.
 인증 완료 후 Claude Code를 다시 실행(`claude`)합니다.
 
 #### 연결 확인
@@ -114,6 +114,16 @@ Claude Code 대화창에서 `/mcp`을 입력하세요. 연결된 서비스가 �
 > - 디자이너: Figma 필수, Notion/Slack 권장
 > - 리서처: Notion 필수, Slack 권장
 > - PM: Notion + Slack 필수
+
+#### 연결이 안 될 때 (트러블슈팅)
+
+| 증상 | 해결 방법 |
+|------|----------|
+| `Error: could not connect` | 인터넷 연결 확인 후 재시도 |
+| 브라우저가 열리지 않음 | URL을 직접 복사해서 브라우저에 붙여넣기 |
+| OAuth 인증 후 터미널이 반응 없음 | 터미널 창을 클릭한 뒤 10초 기다리기 |
+| `/mcp`에서 목록이 비어 있음 | Claude Code 종료(`exit`) 후 재시작(`claude`) |
+| `Error: server not found` | 명령어의 URL을 다시 확인 (오타 주의) |
 
 ---
 

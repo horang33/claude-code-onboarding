@@ -4,7 +4,7 @@
 
 ## 특징
 
-- **7블록, ~110분** 커리큘럼 (사전 준비 ~10분 포함)
+- **7블록, ~115분** 커리큘럼 (사전 준비 ~10분 포함)
 - **STOP PROTOCOL** 기반 interactive 교육 (설명 → 실습 → 퀴즈)
 - **역할별 트랙**: 디자이너/리서처/PM 선택 시 예제와 실습이 분기
 - **MCP 중심**: Figma, Notion, Slack 연결 실습 (Block 4가 킬러 블록)
@@ -84,6 +84,9 @@ claude-code-onboarding/
 │       ├── block5-subagent.md     # 서브에이전트
 │       ├── block6-build.md        # 나만의 워크플로우
 │       └── block7-graduation.md   # 전체 맵 + 다음 단계
+├── CLAUDE.md                       # 프로젝트 설정
+├── LICENSE
+├── .gitignore
 └── README.md
 ```
 

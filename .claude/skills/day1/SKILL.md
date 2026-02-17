@@ -2,7 +2,7 @@
 
 ## Skill Metadata
 - **Trigger**: `/day1`
-- **Description**: 디자이너/리서처/PM 특화 Claude Code 1일 온보딩 프로그램 (7블록, ~110분, 사전 준비 포함)
+- **Description**: 디자이너/리서처/PM 특화 Claude Code 1일 온보딩 프로그램 (7블록, ~115분, 사전 준비 포함)
 
 ---
 
@@ -46,7 +46,7 @@
 ```
 
 - **"네, 완료했어요"** → 2단계(역할 선택)로 진행
-- **"아직이요"** → `references/pre-setup-guide.md`를 Read로 읽고 내용을 안내한 뒤 STOP. "준비가 되면 다시 `/day1-onboarding`을 실행해주세요!" 메시지 출력.
+- **"아직이요"** → `references/pre-setup-guide.md`를 Read로 읽고 내용을 안내한 뒤 STOP. "준비가 되면 다시 `/day1`을 실행해주세요!" 메시지 출력.
 
 ### 2단계: 역할 선택
 
@@ -93,6 +93,7 @@ Block 7: Graduation (5분) ─── Phase A only (퀴즈 없음)
    - `{ROLE}` = "디자이너" → `### 디자이너 트랙` 섹션 사용
    - `{ROLE}` = "리서처" → `### 리서처 트랙` 섹션 사용
    - `{ROLE}` = "PM" → `### PM 트랙` 섹션 사용
+   - **예외**: block0, block2, block7은 공통 블록으로 트랙 분기 없이 전체 내용을 사용한다.
 3. STOP PROTOCOL에 따라 Phase A → STOP → Phase B 순서로 진행한다.
 
 ---
@@ -147,7 +148,7 @@ Block 7: Graduation (5분) ─── Phase A only (퀴즈 없음)
    ```
    🎓 디자이너, 리서처, PM을 위한 Claude Code Day 1 온보딩에 오신 걸 환영합니다!
 
-   총 7개 블록, 약 110분 과정입니다 (사전 준비 ~10분 포함).
+   총 7개 블록, 약 115분 과정입니다 (사전 준비 ~10분 포함).
    중간에 쉬는 시간도 있으니 편하게 따라와주세요.
    ```
 
