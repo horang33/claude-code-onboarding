@@ -91,13 +91,42 @@ claude
 
 ---
 
+## 6단계: MCP 사전 연결 (~3분, 선택)
+
+MCP(Model Context Protocol)는 Claude Code에서 Figma, Notion, Slack 등 외부 도구를 직접 사용할 수 있게 해주는 기능입니다. 온보딩 Block 4에서 실습하므로, 미리 연결해두면 훨씬 수월합니다.
+
+### 연결 방법
+
+1. 브라우저에서 [claude.ai/settings](https://claude.ai/settings) 접속
+2. 좌측 메뉴에서 **"Integrations"** 클릭
+3. 본인 역할에 맞는 서비스를 연결하세요:
+
+| 역할 | 필수 연결 | 권장 연결 |
+|------|----------|----------|
+| 디자이너 | Figma | Notion, Slack |
+| 리서처 | Notion | Slack |
+| PM | Notion, Slack | — |
+
+4. 각 서비스 옆 **"Connect"** 클릭 → OAuth 인증 진행
+5. 연결 후 터미널에서 Claude Code 재시작 (`exit` → `claude`)
+6. `/mcp` 입력으로 연결 확인
+
+> MCP를 지금 연결하지 않아도 온보딩 진행은 가능합니다 (시뮬레이션 모드 제공).
+> 하지만 **실제 연결 후 실습하는 것이 학습 효과가 훨씬 큽니다.**
+
+---
+
 ## 체크리스트
 
-아래 4개 항목을 모두 확인하면 온보딩 준비 완료입니다.
+아래 항목을 확인하면 온보딩 준비 완료입니다.
 
+**필수 (4개)**
 - [ ] Claude Pro/Max 구독 활성화
 - [ ] 터미널/PowerShell 열 수 있음
 - [ ] `claude --version`에서 버전 번호 출력됨
 - [ ] `claude` 실행 후 대화창 표시됨
 
-> 4개 모두 체크되셨으면, 온보딩 당일 `/day1-onboarding`으로 바로 시작할 수 있습니다!
+**선택 (MCP 연결)**
+- [ ] `/mcp`에서 Figma/Notion/Slack 중 1개 이상 connected 표시됨
+
+> 필수 4개가 체크되셨으면, 온보딩 당일 `/day1`으로 바로 시작할 수 있습니다!
