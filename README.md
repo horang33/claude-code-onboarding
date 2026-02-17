@@ -28,7 +28,7 @@
 
 ### 1. 사전 준비 (온보딩 전 완료)
 
-[사전 준비 가이드](.claude/skills/day1-onboarding/references/pre-setup-guide.md)를 따라 Claude Code 설치 + 로그인을 완료해주세요.
+[사전 준비 가이드](.claude/skills/day1/references/pre-setup-guide.md)를 따라 Claude Code 설치 + 로그인을 완료해주세요.
 
 ### 2. 터미널에서 폴더 열기
 
@@ -54,7 +54,7 @@ claude
 
 Claude Code 대화창이 뜨면 아래를 입력하세요:
 ```
-/day1-onboarding
+/day1
 ```
 
 역할 선택(디자이너/리서처/PM) 후 Block 0부터 자동 진행됩니다.
@@ -72,7 +72,7 @@ Claude Code 대화창이 뜨면 아래를 입력하세요:
 
 ```
 claude-code-onboarding/
-├── .claude/skills/day1-onboarding/
+├── .claude/skills/day1/
 │   ├── SKILL.md                    # 메인 오케스트레이터
 │   └── references/
 │       ├── pre-setup-guide.md      # 사전 준비 (설치 전 독립 가이드)

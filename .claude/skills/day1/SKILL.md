@@ -1,7 +1,7 @@
 # Day 1 Onboarding: 디자이너, 리서처, PM을 위한 Claude Code
 
 ## Skill Metadata
-- **Trigger**: `/day1-onboarding`
+- **Trigger**: `/day1`
 - **Description**: 디자이너/리서처/PM 특화 Claude Code 1일 온보딩 프로그램 (7블록, ~110분, 사전 준비 포함)
 
 ---

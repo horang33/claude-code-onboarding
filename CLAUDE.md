@@ -4,14 +4,14 @@
 
 디자이너/리서처/PM 특화 Claude Code 1일 온보딩 프로그램. STOP PROTOCOL 기반 인터랙티브 교육.
 
-- **실행**: `/day1-onboarding` 스킬로 시작
+- **실행**: `/day1` 스킬로 시작
 - **구성**: 7블록, ~110분 (사전 준비 포함)
 - **역할 분기**: 시작 시 디자이너/리서처/PM 선택 → 예제/실습 자동 분기
 
 ## 폴더 구조
 
-- `.claude/skills/day1-onboarding/SKILL.md` — 메인 오케스트레이터
-- `.claude/skills/day1-onboarding/references/` — 블록별 레퍼런스
+- `.claude/skills/day1/SKILL.md` — 메인 오케스트레이터
+- `.claude/skills/day1/references/` — 블록별 레퍼런스
   - `pre-setup-guide.md` — 사전 준비
   - `block0-setup.md` ~ `block7-graduation.md` — 각 블록 내용
 
